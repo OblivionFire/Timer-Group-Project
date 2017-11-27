@@ -1,0 +1,14 @@
+Start of work-
+Date: Time;
+Version Number;
+Goals for day;
+Expected Challenges;
+Needs from Partner;
+
+End of work-
+Date: Time;
+Hours spent working;
+Accomplished;
+Blocks found;
+Goals for next day;
+Needs from Partner;
