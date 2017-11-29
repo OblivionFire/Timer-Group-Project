@@ -8,5 +8,14 @@ namespace Method_Source___Timer_Group_Project
 {
 	class medNode
 	{
+
+
+
+		#region Constructors
+		public medNode()
+		{
+
+		}
+		#endregion
 	}
 }

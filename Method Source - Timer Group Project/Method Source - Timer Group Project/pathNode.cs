@@ -16,7 +16,6 @@ namespace Method_Source___Timer_Group_Project
 		private String pathName; //Path's Name
 
 		#endregion
-
 		#region Getters/Setters
 		public pathNode getPrevPath()
 		{
