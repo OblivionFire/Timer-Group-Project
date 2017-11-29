@@ -1,6 +1,5 @@
 Start of work-
 Date: Time;
-Version Number;
 Goals for day;
 Expected Challenges;
 Needs from Partner;
@@ -12,3 +11,20 @@ Accomplished;
 Blocks found;
 Goals for next day;
 Needs from Partner;
+
+
+28/11/17: 16:03;
+Goals: I want to get the most recent version of the source methods on github,
+I want to write a method to print all running timers,
+I want to write a method to print a specific timer,
+I want to re-write the second thread to take feed back at the end of each timer;
+
+I have had issues moving source code over like this before I'm not sure if it will be an issue again,
+I think I might have to completly rewrite the second thread which will take a while, 
+It might actually just be faster to re write the entire program, it very well mgiht need on at some point soon,
+
+Mostly I would like Grace to start working on implimenting the methods into the GUI, as most do work right now;
+
+28/11/17: 16:14;
+Update: This neededs to be re-writen, I will talk to Grace on how I am going to do this, 
+I am not doing it on my surface;
