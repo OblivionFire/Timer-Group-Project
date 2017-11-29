@@ -75,6 +75,7 @@ namespace Method_Source___Timer_Group_Project
 			{
 				pathNode newPath = new pathNode(pathNameX, firstPath);
 				firstPath.setNextpath(newPath); //firstPath.next = newPath
+                newPath.setPrevpath(firstPath);
 				M.debug("New path Created, registered as second path created");
 			}
 

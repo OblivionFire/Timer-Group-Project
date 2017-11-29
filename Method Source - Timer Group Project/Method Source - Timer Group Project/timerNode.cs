@@ -12,7 +12,7 @@ namespace Method_Source___Timer_Group_Project
 		private timerNode prevTimer;
 		private timerNode nextTimer;
 		private medNode med;
-		private string timerName;
+        private string name;
 		#endregion
 		#region Getters/Setters
 		public timerNode getPrevTimer()
@@ -32,6 +32,24 @@ namespace Method_Source___Timer_Group_Project
 		{
 			nextTimer = nextTimerX;
 		}
+
+        public string getTimerName()
+        {
+            return name;
+        }
+        public void setTimerName(String nameX)
+        {
+            name = nameX;
+        }
+
+        public medNode getMed()
+        {
+            return med;
+        }
+        public void setMed(medNode medX)
+        {
+            med = medX;
+        }
 		#endregion
 		#region Constructor
 		public timerNode()
@@ -47,14 +65,14 @@ namespace Method_Source___Timer_Group_Project
 			//Constructor used for the first path created
 			prevTimer = null;
 			nextTimer = null;
-			timerName = timerNameX;
+			name = timerNameX;
 			med = new medNode();
 		}
 
 		public timerNode(String timerNameX, timerNode prevTimerX)
 		{
 			//Constructor for when only the prev path is know (The second path created)
-			timerName = timerNameX;
+			name = timerNameX;
 			prevTimer = prevTimerX;
 			prevTimer = null;
 			med = new medNode();
@@ -63,7 +81,7 @@ namespace Method_Source___Timer_Group_Project
 		public timerNode(String timerNameX, timerNode prevTimerX, timerNode nextTimerX)
 		{
 			//Constructor that is going to be used the most often. Used when > 2 paths created
-			timerName = timerNameX;
+			name = timerNameX;
 			prevTimer = prevTimerX;
 			nextTimer = nextTimerX;
 			med = new medNode();
