@@ -1,0 +1,10 @@
+C:\Users\dhugh\source\repos\EventsPage\EventsPage\bin\Debug\EventsPage.exe.config
+C:\Users\dhugh\source\repos\EventsPage\EventsPage\bin\Debug\EventsPage.exe
+C:\Users\dhugh\source\repos\EventsPage\EventsPage\bin\Debug\EventsPage.pdb
+C:\Users\dhugh\source\repos\EventsPage\EventsPage\obj\Debug\EventsPage.csprojResolveAssemblyReference.cache
+C:\Users\dhugh\source\repos\EventsPage\EventsPage\obj\Debug\EventsPage.Form1.resources
+C:\Users\dhugh\source\repos\EventsPage\EventsPage\obj\Debug\EventsPage.Properties.Resources.resources
+C:\Users\dhugh\source\repos\EventsPage\EventsPage\obj\Debug\EventsPage.csproj.GenerateResource.Cache
+C:\Users\dhugh\source\repos\EventsPage\EventsPage\obj\Debug\EventsPage.csproj.CoreCompileInputs.cache
+C:\Users\dhugh\source\repos\EventsPage\EventsPage\obj\Debug\EventsPage.exe
+C:\Users\dhugh\source\repos\EventsPage\EventsPage\obj\Debug\EventsPage.pdb
