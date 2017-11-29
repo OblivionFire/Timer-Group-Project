@@ -8,11 +8,12 @@ using System.Diagnostics;
 namespace Method_Source___Timer_Group_Project
 {
 	class pathNodeControl
-	{ 
+	{
 		#region Variables
 		private pathNode firstPath; //The first path of the pathController
 		private pathNode PS; //A scanner used to navigate through the stored paths in a non-discrutive way
 		private static pathNodeControl master; //Singleton referance
+		private medNodeControl medMaster;
 		#endregion
 		#region Getters/Setters
 		public pathNode getFirstPath()
@@ -40,12 +41,13 @@ namespace Method_Source___Timer_Group_Project
 		{
 			firstPath = null;
 			PS = null;
+			medMaster = medNodeControl.Master();
 		}
 		#endregion
 		#region Singleton
 		public static pathNodeControl Master()
 		{
-			if(master == null)
+			if (master == null)
 			{
 				master = new pathNodeControl();
 			}
@@ -71,18 +73,18 @@ namespace Method_Source___Timer_Group_Project
 				M.debug("New Path Created, assigned to firstPath");
 			}
 
-			else if(firstPath.getNextPath() == null)
+			else if (firstPath.getNextPath() == null)
 			{
 				pathNode newPath = new pathNode(pathNameX, firstPath);
 				firstPath.setNextpath(newPath); //firstPath.next = newPath
-                newPath.setPrevpath(firstPath);
+				newPath.setPrevpath(firstPath);
 				M.debug("New path Created, registered as second path created");
 			}
 
 			else
 			{
 				PS = firstPath;
-				while(PS.getNextPath() != null)
+				while (PS.getNextPath() != null)
 				{
 					//Find last path
 					PS = PS.getNextPath();
@@ -100,13 +102,13 @@ namespace Method_Source___Timer_Group_Project
 		public void removePath(String pathNameToRemove)
 		{
 			pathNode toRemove = null;
-			if(firstPath != null) //if FP == null then there are no paths
+			if (firstPath != null) //if FP == null then there are no paths
 			{
 				PS = firstPath;
 
-				while(PS.getNextPath() != null)
+				while (PS.getNextPath() != null)
 				{
-					if(PS.getPathName().Equals(pathNameToRemove))
+					if (PS.getPathName().Equals(pathNameToRemove))
 					{
 						toRemove = PS; //finding the first path with this name and exiting loop
 						break;
@@ -114,7 +116,7 @@ namespace Method_Source___Timer_Group_Project
 					PS = PS.getNextPath(); //incriment loop
 				}
 
-				if(toRemove == null)
+				if (toRemove == null)
 				{
 					Console.WriteLine("There was no Path With that Name. Pleaes make sure it was spelled correctly, this is Case sensative"); //No path found with proper nam
 				}
@@ -168,7 +170,7 @@ namespace Method_Source___Timer_Group_Project
 			 * The getters for pathNodes are not build to not return null, meaning if you try and call a method like
 			 * remove.getNext().setNext(null) but remove.getNext() is null it will hard error
 			 */
-			if(remove == firstPath) //If the path to remove is the first path, you simple need to re-assign first path.
+			if (remove == firstPath) //If the path to remove is the first path, you simple need to re-assign first path.
 			{
 				if (remove.getNextPath() == null) //Program will error out w/o these error checks
 				{
@@ -182,15 +184,15 @@ namespace Method_Source___Timer_Group_Project
 				}
 			}
 
-			else if(remove == firstPath.getNextPath()) 
-				/*
-				 * This is a simi-redundent case
-				 * This could be handled with the else statment
-				 * however I like handling this case seperatly I don't know why
-				 * Anyt thing I mess with anything to do with firstPath, I like to call it Directly
-				 */
+			else if (remove == firstPath.getNextPath())
+			/*
+			 * This is a simi-redundent case
+			 * This could be handled with the else statment
+			 * however I like handling this case seperatly I don't know why
+			 * Anyt thing I mess with anything to do with firstPath, I like to call it Directly
+			 */
 			{
-				if(remove.getNextPath() == null)
+				if (remove.getNextPath() == null)
 				{
 					firstPath.setNextpath(null);
 					remove.setPrevpath(null); //This is a redudent clean up that I like to do, it is not necissary
@@ -207,7 +209,7 @@ namespace Method_Source___Timer_Group_Project
 
 			else
 			{
-				if(remove.getNextPath() == null)
+				if (remove.getNextPath() == null)
 				{
 					remove.getPrevPath().setNextpath(null);
 					remove.setNextpath(null);
@@ -226,14 +228,14 @@ namespace Method_Source___Timer_Group_Project
 
 		public void editPath(String pathName)
 		{
-			if(firstPath != null)
+			if (firstPath != null)
 			{
 				//If firstPath == null there are no paths
 				PS = firstPath;
 				pathNode toEdit = null;
-				while(PS.getNextPath() != null)
+				while (PS.getNextPath() != null)
 				{
-					if(PS.getPathName().Equals(pathName))
+					if (PS.getPathName().Equals(pathName))
 					{
 						//Finding the first path with that name, storing it, and breaking out of the loop
 						toEdit = PS;
@@ -243,7 +245,7 @@ namespace Method_Source___Timer_Group_Project
 					PS = PS.getNextPath();
 				}
 
-				if(toEdit == null)
+				if (toEdit == null)
 				{
 					//No path by that name
 					Console.WriteLine("There is no path by that name. Please make sure it was spelt correctly, this is Case Sensative");
@@ -256,24 +258,36 @@ namespace Method_Source___Timer_Group_Project
 					M.BL();
 					Console.WriteLine("1) Edit the Path's name");
 					Console.WriteLine("2) Edit the timer set in Path " + pathName);
+					M.BL();
 
 					ConsoleKeyInfo answer = Console.ReadKey();
+					M.BL();
+					M.BL();
 
-					switch(answer.KeyChar)
+					switch (answer.KeyChar)
 					{
 						case '1':
 							{
-								PS.changePathName(pathName);
+								toEdit.changePathName(pathName);
 								break;
 							}
 
 						case '2':
 							{
+								Console.WriteLine("What timer would you like to edit?");
+								M.BL();
+								M.BL();
+								toEdit.getTimers().printTimers();
+								string timerToEdit = Console.ReadLine();
+								toEdit.getTimers().editTimer(timerToEdit);
+								M.BL();
 
 								break;
 							}
 						default:
 							{
+								Console.WriteLine("that is not an option");
+								M.BL();
 								break;
 							}
 					}
@@ -286,6 +300,69 @@ namespace Method_Source___Timer_Group_Project
 				Console.WriteLine("There are no paths to Edit. Please Create some First");
 			}
 		}
-	}
 
+		public void addTimer(String pathNameX, String timerNameX, String medNameX)
+		{
+			medNode medToAdd = null;
+			medToAdd = medMaster.findMed(medNameX);
+			if (medToAdd == null)
+			{
+				Console.WriteLine("That medication does not exsist");
+			}
+			else
+			{
+				if (firstPath == null)
+				{
+					Console.WriteLine("There are not paths");
+				}
+
+				else
+				{
+					PS = firstPath;
+					pathNode pathToAddTo = null;
+					while (PS.getNextPath() != null)
+					{
+						if (PS.getPathName().Equals(pathNameX))
+						{
+							pathToAddTo = PS;
+						}
+
+						PS = PS.getNextPath();
+					}
+
+					if (pathToAddTo == null)
+					{
+						Console.WriteLine("That path does not exsist");
+					}
+
+					else
+					{
+						pathToAddTo.getTimers().addTimer(timerNameX, medToAdd);
+						M.debug("Med added");
+					}
+				}
+			}
+		}
+
+		public void startTimer(string pathNameX)
+		{
+			if(firstPath == null)
+			{
+				Console.WriteLine("No paths exist");
+			}
+
+			else
+			{
+				PS = firstPath;
+
+				while(PS.getNextPath() != null)
+				{
+					if(PS.getPathName().Equals(pathNameX))
+					{
+						PS.getTimers().startFirstTimer();
+					}
+				}
+			}
+		}
+	}
 }

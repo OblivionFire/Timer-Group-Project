@@ -13,7 +13,7 @@ Goals for next day;
 Needs from Partner;
 
 
-28/11/17: 16:03;
+28/11/17: 1603;
 Goals: I want to get the most recent version of the source methods on github,
 I want to write a method to print all running timers,
 I want to write a method to print a specific timer,
@@ -25,6 +25,21 @@ It might actually just be faster to re write the entire program, it very well mg
 
 Mostly I would like Grace to start working on implimenting the methods into the GUI, as most do work right now;
 
-28/11/17: 16:14;
+28/11/17: 1614;
 Update: This neededs to be re-writen, I will talk to Grace on how I am going to do this, 
 I am not doing it on my surface;
+
+28/11/17: 2020;
+Time Spent Working: 3.5 hours;
+Accomplished: new out line and severall hundred lines of boiler plate code done;
+Blocks found: time needed;
+Goals for next day: Finish Rewrite;
+Needs from Grace: none;
+
+
+29/11/17: 1530;
+Goals: finish re-write, start meshing with GUI;
+
+29/11/17: 1740;
+Update: there is a button that automaticall multi threads something in the GUI, I wrote a method to use this, it is done,
+I am going to add events next, then if there is time I will add the old multi-thread code, I think if we want to pause timers we will still need it;

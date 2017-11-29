@@ -86,7 +86,36 @@ namespace Method_Source___Timer_Group_Project
 			nextTimer = nextTimerX;
 			med = new medNode();
 		}
+
+		public timerNode(String timerNameX, medNode medX)
+		{
+			name = timerNameX;
+			med = medX;
+		}
 		#endregion
 
+
+		public void startTimer()
+		{
+
+			DateTime start = DateTime.Now;
+			TimeSpan timeRamaining = TimeSpan.FromSeconds(0);
+			do
+			{
+				TimeSpan Delta = DateTime.Now - start;
+				timeRamaining = med.getTime() - Delta;
+				Console.WriteLine(timeRamaining);
+
+			} while (timeRamaining.TotalSeconds > 0);
+
+		}
+		#region Misc.
+
+		public void toString()
+		{
+			Console.WriteLine("Timer Name: " + name);
+			Console.Write("Link Medication: " + med.getName());
+		}
+		#endregion
 	}
 }

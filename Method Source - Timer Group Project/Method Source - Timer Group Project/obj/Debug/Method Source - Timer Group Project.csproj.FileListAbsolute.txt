@@ -10,3 +10,9 @@ C:\Programing\Repos\Re-write branch\Method Source - Timer Group Project\Method S
 C:\Programing\Repos\reBuild\Method Source - Timer Group Project\Method Source - Timer Group Project\bin\Debug\Method Source - Timer Group Project.exe.config
 C:\Programing\Repos\reBuild\Method Source - Timer Group Project\Method Source - Timer Group Project\obj\Debug\Method Source - Timer Group Project.exe
 C:\Programing\Repos\reBuild\Method Source - Timer Group Project\Method Source - Timer Group Project\obj\Debug\Method Source - Timer Group Project.pdb
+C:\Programming\Repos\Timer Group Project\Method Source - Timer Group Project\Method Source - Timer Group Project\bin\Debug\Method Source - Timer Group Project.exe.config
+C:\Programming\Repos\Timer Group Project\Method Source - Timer Group Project\Method Source - Timer Group Project\bin\Debug\Method Source - Timer Group Project.exe
+C:\Programming\Repos\Timer Group Project\Method Source - Timer Group Project\Method Source - Timer Group Project\bin\Debug\Method Source - Timer Group Project.pdb
+C:\Programming\Repos\Timer Group Project\Method Source - Timer Group Project\Method Source - Timer Group Project\obj\Debug\Method Source - Timer Group Project.csprojResolveAssemblyReference.cache
+C:\Programming\Repos\Timer Group Project\Method Source - Timer Group Project\Method Source - Timer Group Project\obj\Debug\Method Source - Timer Group Project.exe
+C:\Programming\Repos\Timer Group Project\Method Source - Timer Group Project\Method Source - Timer Group Project\obj\Debug\Method Source - Timer Group Project.pdb

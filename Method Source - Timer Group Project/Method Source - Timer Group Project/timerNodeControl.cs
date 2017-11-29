@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace Method_Source___Timer_Group_Project
 {
@@ -11,6 +12,7 @@ namespace Method_Source___Timer_Group_Project
 		#region Variables
 		private timerNode firstTimer; //referance to first node stored
 		private timerNode TS; //A scanner used to accsess data in a non-discructive fassion
+		private medNodeControl medMaster; //referance to med controller
 		#endregion
 		#region Getters/Setters
 		public timerNode getFirstNode()
@@ -32,6 +34,7 @@ namespace Method_Source___Timer_Group_Project
 		{
 			firstTimer = null;
 			TS = null;
+			medMaster = medNodeControl.Master();
 		}
 
 		#endregion
@@ -39,7 +42,7 @@ namespace Method_Source___Timer_Group_Project
 
 
 
-		public void addTimer(String timerNodeX)
+		public void addTimer(String timerNodeX, medNode medX)
 		{
 			/*
 			 * Three Conditions
@@ -50,7 +53,7 @@ namespace Method_Source___Timer_Group_Project
 
 			if (firstTimer == null)
 			{
-				timerNode newTimer = new timerNode(timerNodeX);
+				timerNode newTimer = new timerNode(timerNodeX, medX);
 				firstTimer = newTimer;
 				Console.ForegroundColor = ConsoleColor.DarkGray;
 				M.debug("New Timer Created, assigned to firstTimer");
@@ -58,7 +61,7 @@ namespace Method_Source___Timer_Group_Project
 
 			else if (firstTimer.getNextTimer() == null)
 			{
-				timerNode newTimer = new timerNode(timerNodeX, firstTimer);
+				timerNode newTimer = new timerNode(timerNodeX, medX);
 				firstTimer.setNextTimer(newTimer); //firstTimer.next = newPath
                 newTimer.setPrevTimer(firstTimer);
 				M.debug("New Timer Created, registered as second Timer created");
@@ -72,7 +75,7 @@ namespace Method_Source___Timer_Group_Project
 					//Find last path
 					TS = TS.getNextTimer();
 				}
-				timerNode newPath = new timerNode(timerNodeX);
+				timerNode newPath = new timerNode(timerNodeX, medX);
 				TS.setNextTimer(newPath); //lastPath.next = newPath
 				newPath.setPrevTimer(TS); //newPath.last = lastPath
 
@@ -232,29 +235,36 @@ namespace Method_Source___Timer_Group_Project
 
                 else
                 {
-                    Console.WriteLine("What part of the time would you Like to Edit");
+                    Console.WriteLine("What part of the timer would you Like to Edit");
                     Console.WriteLine("1) Linked Medication");
                     Console.WriteLine("2) Timer Name");
-                    M.BL();
+					M.BL();
                     ConsoleKeyInfo answer = Console.ReadKey();
                     M.BL();
                     switch (answer.KeyChar)
                     {
                         case '1':
                             {
+								Console.WriteLine("What medication would you like to change to (Enter Name)");
+								M.BL();
+								medMaster.printMeds();
 
+								string medToChangeTo = Console.ReadLine();
+								toEdit.setMed(medMaster.findMed(medToChangeTo));
                                 break;
                             }
 
                         case '2':
                             {
-
-                                break;
+								Console.WriteLine("What would you like to change the name to be?");
+								M.BL();
+								string newName = Console.ReadLine();
+								toEdit.setTimerName(newName);
+								break;
                             }
-
                         default:
                             {
-
+								Console.WriteLine("This is not an option");
                                 break;
                             }
                     }
@@ -262,7 +272,35 @@ namespace Method_Source___Timer_Group_Project
             }
 
 
-            }
+        }
 
-    }
+		public void startFirstTimer()
+		{
+			firstTimer.startTimer();
+		}
+
+		#region Misc.
+
+		public void printTimers()
+		{
+			if (firstTimer == null)
+			{
+				Console.WriteLine("There are no Timers to display");
+			}
+
+			else
+			{
+				TS = firstTimer;
+
+				while (TS != null)
+				{
+					TS.toString();
+					M.BL();
+					TS = TS.getNextTimer();
+				}
+			}
+		}
+		#endregion
+
+	}
 }

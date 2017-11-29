@@ -64,7 +64,34 @@ namespace Method_Source___Timer_Group_Project
         #region Constructors
         public medNode()
 		{
+			name = null;
+			does = null;
+		}
 
+		public medNode(String medNameX, String medDoesX, TimeSpan treatTimeX)
+		{
+			name = medNameX;
+			does = medDoesX;
+			treatTime = treatTimeX;
+		}
+		#endregion
+
+
+
+
+
+		#region Misc.
+		public void toString()
+		{
+			Console.WriteLine("Medication Name: " + name);
+			Console.WriteLine("Medication Does: " + does);
+			Console.WriteLine("Treatment Time (HH:MM:SS) : " + treatTime.ToString());
+			M.BL();
+		}
+
+		public string toString(bool wantReturn)
+		{
+			return (name + does);
 		}
 		#endregion
 	}

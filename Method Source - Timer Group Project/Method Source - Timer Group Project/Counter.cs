@@ -8,5 +8,6 @@ namespace Method_Source___Timer_Group_Project
 {
 	class Counter
 	{
+
 	}
 }
