@@ -393,8 +393,9 @@ namespace Method_Source___Timer_Group_Project
 				{
 					if(PS.getPathName().Equals(pathNameX))
 					{
-						PS.getTimers().startFirstTimer();
+                        PS.getTimers().startFirstTimer();
 					}
+                    PS = PS.getNextPath();
 				}
 			}
 		}

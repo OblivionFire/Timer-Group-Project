@@ -286,7 +286,7 @@ namespace Method_Source___Timer_Group_Project
 		{
 			if (firstTimer.getRunning() != true)
 			{
-				firstTimer.startTimer();
+				firstTimer.startTimer(true);
 				firstTimer.setRunning(true);
 			}
 			else

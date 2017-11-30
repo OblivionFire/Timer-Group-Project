@@ -16,3 +16,6 @@ C:\Programming\Repos\Timer Group Project\Method Source - Timer Group Project\Met
 C:\Programming\Repos\Timer Group Project\Method Source - Timer Group Project\Method Source - Timer Group Project\obj\Debug\Method Source - Timer Group Project.csprojResolveAssemblyReference.cache
 C:\Programming\Repos\Timer Group Project\Method Source - Timer Group Project\Method Source - Timer Group Project\obj\Debug\Method Source - Timer Group Project.exe
 C:\Programming\Repos\Timer Group Project\Method Source - Timer Group Project\Method Source - Timer Group Project\obj\Debug\Method Source - Timer Group Project.pdb
+C:\Programing\Repos\reBuild\Method Source - Timer Group Project\Method Source - Timer Group Project\obj\Debug\Method Source - Timer Group Project.csprojResolveAssemblyReference.cache
+C:\Programing\Repos\reBuild\Method Source - Timer Group Project\Method Source - Timer Group Project\bin\Debug\Method Source - Timer Group Project.exe
+C:\Programing\Repos\reBuild\Method Source - Timer Group Project\Method Source - Timer Group Project\bin\Debug\Method Source - Timer Group Project.pdb

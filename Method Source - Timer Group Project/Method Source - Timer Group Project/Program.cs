@@ -28,7 +28,7 @@ namespace Method_Source___Timer_Group_Project
 
 			DateTime temp4 = new DateTime(2017, 11, 29, 18, 45, 55, 0);
 			paths.addEvent("Path One", "Test", temp4);
-			paths.startEvent("Path One");
+			paths.startTimer("Path One");
 
 		}
 	}
