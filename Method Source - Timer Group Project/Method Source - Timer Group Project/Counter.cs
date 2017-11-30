@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
 
-namespace Method_Source___Timer_Group_Project
+namespace Method_Source_Timer_Group_Project
 {
 	class Counter
 	{

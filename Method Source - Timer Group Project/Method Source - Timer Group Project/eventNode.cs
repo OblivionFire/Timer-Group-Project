@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Method_Source___Timer_Group_Project
+namespace Method_Source_Timer_Group_Project
 {
 	class eventNode
 	{
