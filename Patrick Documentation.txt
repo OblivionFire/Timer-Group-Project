@@ -51,3 +51,10 @@ I added the event Node and Node control, they work, but they are ruff,
 They need some refinment, I will do this tomorrow morning before class, but they are more then enough to play with,
 I didnot write the other multi-thread method yet, I have a math quiz to study for,
 We will see how far you get tonight and go from there tomorrow morning;
+
+30/11/17: 0610;
+Goals: Add in orginal multi-tread method before class,
+Start meshing GUI;
+Expected Challenges: Not a bloody clue, 
+The GUI might throw me for a little bit;
+Needs for Grace: just keep working, if you could also add the mock up and market resarch links to the ReadME file;

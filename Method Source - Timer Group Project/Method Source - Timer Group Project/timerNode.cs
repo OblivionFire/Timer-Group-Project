@@ -12,7 +12,11 @@ namespace Method_Source___Timer_Group_Project
 		private timerNode prevTimer;
 		private timerNode nextTimer;
 		private medNode med;
-        private string name;
+		private Counter counter;
+        private string timerName;
+		private string pathName;
+		private DateTime start;
+		private bool running;
 		#endregion
 		#region Getters/Setters
 		public timerNode getPrevTimer()
@@ -35,11 +39,11 @@ namespace Method_Source___Timer_Group_Project
 
         public string getTimerName()
         {
-            return name;
+            return timerName;
         }
         public void setTimerName(String nameX)
         {
-            name = nameX;
+            timerName = nameX;
         }
 
         public medNode getMed()
@@ -50,6 +54,24 @@ namespace Method_Source___Timer_Group_Project
         {
             med = medX;
         }
+
+		public DateTime getStart()
+		{
+			return start;
+		}
+		public void setStart(DateTime startX)
+		{
+			start = startX;
+		}
+
+		public bool getRunning()
+		{
+			return running;
+		}
+		public void setRunning(bool runningX)
+		{
+			running = runningX;
+		}
 		#endregion
 		#region Constructor
 		public timerNode()
@@ -57,7 +79,9 @@ namespace Method_Source___Timer_Group_Project
 			//Defult constructor
 			prevTimer = null;
 			nextTimer = null;
-			med = new medNode();
+			med = null;
+			counter = Counter.Master();
+			running = false;
 		}
 
 		public timerNode(String timerNameX)
@@ -65,41 +89,51 @@ namespace Method_Source___Timer_Group_Project
 			//Constructor used for the first path created
 			prevTimer = null;
 			nextTimer = null;
-			name = timerNameX;
-			med = new medNode();
+			timerName = timerNameX;
+			med = null;
+			counter = Counter.Master();
+			running = false;
 		}
 
 		public timerNode(String timerNameX, timerNode prevTimerX)
 		{
 			//Constructor for when only the prev path is know (The second path created)
-			name = timerNameX;
+			timerName = timerNameX;
 			prevTimer = prevTimerX;
 			prevTimer = null;
-			med = new medNode();
+			med = null;
+			counter = Counter.Master();
+			running = false;
 		}
 
 		public timerNode(String timerNameX, timerNode prevTimerX, timerNode nextTimerX)
 		{
 			//Constructor that is going to be used the most often. Used when > 2 paths created
-			name = timerNameX;
+			timerName = timerNameX;
 			prevTimer = prevTimerX;
 			nextTimer = nextTimerX;
-			med = new medNode();
+			med = null;
+			counter = Counter.Master();
+			running = false;
 		}
 
-		public timerNode(String timerNameX, medNode medX)
+		public timerNode(String timerNameX, medNode medX, string pathNameX)
 		{
-			name = timerNameX;
+			timerName = timerNameX;
 			med = medX;
+			pathName = pathNameX;
+			counter = Counter.Master();
+			running = false;
 		}
 		#endregion
 
 
-		public void startTimer()
+		public void startTimer(bool thread)
 		{
 
 			DateTime start = DateTime.Now;
 			TimeSpan timeRamaining = TimeSpan.FromSeconds(0);
+			running = true;
 			do
 			{
 				TimeSpan Delta = DateTime.Now - start;
@@ -109,12 +143,18 @@ namespace Method_Source___Timer_Group_Project
 			} while (timeRamaining.TotalSeconds > 0);
 
 		}
+
+		public void startTimer()
+		{
+
+		}
 		#region Misc.
 
 		public void toString()
 		{
-			Console.WriteLine("Timer Name: " + name);
+			Console.WriteLine("Timer Name: " + timerName);
 			Console.Write("Link Medication: " + med.getName());
+			Console.WriteLine("Home Path: " + pathName);
 		}
 		#endregion
 	}

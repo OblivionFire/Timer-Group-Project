@@ -337,7 +337,7 @@ namespace Method_Source___Timer_Group_Project
 
 					else
 					{
-						pathToAddTo.getTimers().addTimer(timerNameX, medToAdd);
+						pathToAddTo.getTimers().addTimer(timerNameX, medToAdd, pathToAddTo.getPathName());
 						M.debug("Med added");
 					}
 				}
