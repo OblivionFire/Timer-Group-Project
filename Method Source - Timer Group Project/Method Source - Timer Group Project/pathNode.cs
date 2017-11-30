@@ -13,6 +13,7 @@ namespace Method_Source___Timer_Group_Project
 		private pathNode prevPath; //The path directly behind this one
 		private pathNode nextPath; //The path dircetly before this one
 		private timerNodeControl timers; //The Timer Node Control linked to this path - It manages this path's timers -
+		private eventNodeControler events;
 		private String pathName; //Path's Name
 
 		#endregion
@@ -53,6 +54,15 @@ namespace Method_Source___Timer_Group_Project
 			pathName = pathNameX;
 		}
 
+		public eventNodeControler getEvents()
+		{
+			return events;
+		}
+		public void setEvents(eventNodeControler eventsX)
+		{
+			events = eventsX;
+		}
+
 		#endregion
 		#region Constructors
 		public pathNode()
@@ -61,6 +71,7 @@ namespace Method_Source___Timer_Group_Project
 			prevPath = null;
 			nextPath = null;
 			timers = new timerNodeControl();
+			events = new eventNodeControler();
 		}
 
 		public pathNode(String pathNameX)
@@ -70,6 +81,7 @@ namespace Method_Source___Timer_Group_Project
 			nextPath = null;
 			pathName = pathNameX;
 			timers = new timerNodeControl();
+			events = new eventNodeControler();
 		}
 
 		public pathNode(String pathNameX, pathNode prevPathX)
@@ -79,6 +91,7 @@ namespace Method_Source___Timer_Group_Project
 			prevPath = prevPathX;
 			prevPath = null;
 			timers = new timerNodeControl();
+			events = new eventNodeControler();
 		}
 
 		public pathNode(String pathNameX, pathNode prevPathX, pathNode nextPathX)
@@ -88,6 +101,7 @@ namespace Method_Source___Timer_Group_Project
 			prevPath = prevPathX;
 			nextPath = nextPathX;
 			timers = new timerNodeControl();
+			events = new eventNodeControler();
 		}
 		#endregion
 

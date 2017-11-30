@@ -344,6 +344,40 @@ namespace Method_Source___Timer_Group_Project
 			}
 		}
 
+		public void addEvent(String pathNameX, String EventNameX, DateTime endTimeX)
+		{
+				if (firstPath == null)
+				{
+					Console.WriteLine("There are not paths");
+				}
+
+				else
+				{
+					PS = firstPath;
+					pathNode pathToAddTo = null;
+					while (PS.getNextPath() != null)
+					{
+						if (PS.getPathName().Equals(pathNameX))
+						{
+							pathToAddTo = PS;
+						}
+
+						PS = PS.getNextPath();
+					}
+
+					if (pathToAddTo == null)
+					{
+						Console.WriteLine("That path does not exsist");
+					}
+
+					else
+					{
+					pathToAddTo.getEvents().addEvent(EventNameX, endTimeX);
+						M.debug("Event added");
+					}
+				}
+		}
+
 		public void startTimer(string pathNameX)
 		{
 			if(firstPath == null)
@@ -360,6 +394,27 @@ namespace Method_Source___Timer_Group_Project
 					if(PS.getPathName().Equals(pathNameX))
 					{
 						PS.getTimers().startFirstTimer();
+					}
+				}
+			}
+		}
+
+		public void startEvent(string pathNameX)
+		{
+			if (firstPath == null)
+			{
+				Console.WriteLine("No paths exist");
+			}
+
+			else
+			{
+				PS = firstPath;
+
+				while (PS.getNextPath() != null)
+				{
+					if (PS.getPathName().Equals(pathNameX))
+					{
+						PS.getEvents().startEvent();
 					}
 				}
 			}

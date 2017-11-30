@@ -43,6 +43,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Counter.cs" />
+    <Compile Include="eventNode.cs" />
+    <Compile Include="eventNodeControler.cs" />
     <Compile Include="medNodeControl.cs" />
     <Compile Include="medNode.cs" />
     <Compile Include="M.cs" />

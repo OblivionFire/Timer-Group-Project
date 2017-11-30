@@ -43,3 +43,11 @@ Goals: finish re-write, start meshing with GUI;
 29/11/17: 1740;
 Update: there is a button that automaticall multi threads something in the GUI, I wrote a method to use this, it is done,
 I am going to add events next, then if there is time I will add the old multi-thread code, I think if we want to pause timers we will still need it;
+
+29/11/17: 1845;
+Time Spent Working: 3 hours;
+Accomplished: Re-write finished,
+I added the event Node and Node control, they work, but they are ruff,
+They need some refinment, I will do this tomorrow morning before class, but they are more then enough to play with,
+I didnot write the other multi-thread method yet, I have a math quiz to study for,
+We will see how far you get tonight and go from there tomorrow morning;
