@@ -1,0 +1,10 @@
+C:\Users\dhugh\source\repos\MedicinePage\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe.config
+C:\Users\dhugh\source\repos\MedicinePage\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe
+C:\Users\dhugh\source\repos\MedicinePage\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.pdb
+C:\Users\dhugh\source\repos\MedicinePage\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csprojResolveAssemblyReference.cache
+C:\Users\dhugh\source\repos\MedicinePage\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Form1.resources
+C:\Users\dhugh\source\repos\MedicinePage\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Properties.Resources.resources
+C:\Users\dhugh\source\repos\MedicinePage\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.GenerateResource.Cache
+C:\Users\dhugh\source\repos\MedicinePage\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.CoreCompileInputs.cache
+C:\Users\dhugh\source\repos\MedicinePage\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.exe
+C:\Users\dhugh\source\repos\MedicinePage\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.pdb
