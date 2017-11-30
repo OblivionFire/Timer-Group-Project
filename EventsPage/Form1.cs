@@ -41,15 +41,19 @@ namespace EventsPage
 
         }
 
+        //enter new event string
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            
             //activates when enter is pressed
             if (enterPressed)
             {
+               
                 Event temp = new Event(textBox1.Text);
-                textBox1.Text = "";
-               Console.WriteLine( temp.getName());
+
+                MessageBox.Show(temp.getName() + "//" + temp.getStartTime() + "//" + temp.getEndTime());
             }
+            return;
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -57,11 +61,14 @@ namespace EventsPage
             string eventTime = textBox1.Text;
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs textBox1_TextChanged)
         {
             enterPressed = true;
             //eventargs is a problem
-            textBox1_TextChanged(button1, e);
+            
+            this.textBox1_TextChanged(button1, textBox1_TextChanged);
+            enterPressed = false;
+            textBox1.Text = "";
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -72,7 +79,7 @@ namespace EventsPage
         private void eventList_SelectedIndexChanged(object sender, EventArgs e)
         {
             //syntax incorrect. Intended to remove chosen object from events arraylist
-            events.Remove(e);
-        }
+            // events.Remove(e);
+            
     }
 }

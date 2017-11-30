@@ -37,7 +37,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.eventList = new System.Windows.Forms.ListBox();
-            this.listView1 = new System.Windows.Forms.ListView();
             this.tabControl1.SuspendLayout();
             this.addEvent.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -93,9 +92,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(50, 15);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(248, 25);
+            this.label2.Size = new System.Drawing.Size(230, 25);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Event Name (name,time)";
+            this.label2.Text = "Event (name,start,end)";
             // 
             // textBox1
             // 
@@ -133,22 +132,12 @@
             this.eventList.Tag = "";
             this.eventList.SelectedIndexChanged += new System.EventHandler(this.eventList_SelectedIndexChanged);
             // 
-            // listView1
-            // 
-            this.listView1.BackColor = System.Drawing.Color.SlateGray;
-            this.listView1.Location = new System.Drawing.Point(181, 227);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(832, 456);
-            this.listView1.TabIndex = 4;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(1186, 918);
-            this.Controls.Add(this.listView1);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
@@ -173,7 +162,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ListBox eventList;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ListView listView1;
     }
 }
 
