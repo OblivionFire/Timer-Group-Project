@@ -14,3 +14,20 @@ C:\Programming\Repos\Timer-Group-Project\Timer-Group-Project-GUI\Timer-Group-Pro
 C:\Programming\Repos\Timer-Group-Project\Timer-Group-Project-GUI\Timer-Group-Project-GUI\obj\Debug\Timer_Group_Project_GUI.Edit_Medication.resources
 C:\Programming\Repos\Timer-Group-Project\Timer-Group-Project-GUI\Timer-Group-Project-GUI\obj\Debug\Timer_Group_Project_GUI.Remove_Medication.resources
 C:\Programming\Repos\Timer-Group-Project\Timer-Group-Project-GUI\Timer-Group-Project-GUI\obj\Debug\Timer_Group_Project_GUI.Add_Event.resources
+C:\Users\dhugh\source\repos\Timer-Group-Project\Timer-Group-Project-GUI\Timer-Group-Project-GUI\bin\Debug\Timer-Group-Project-GUI.exe.config
+C:\Users\dhugh\source\repos\Timer-Group-Project\Timer-Group-Project-GUI\Timer-Group-Project-GUI\bin\Debug\Timer-Group-Project-GUI.exe
+C:\Users\dhugh\source\repos\Timer-Group-Project\Timer-Group-Project-GUI\Timer-Group-Project-GUI\bin\Debug\Timer-Group-Project-GUI.pdb
+C:\Users\dhugh\source\repos\Timer-Group-Project\Timer-Group-Project-GUI\Timer-Group-Project-GUI\bin\Debug\Method Source - Timer Group Project.exe
+C:\Users\dhugh\source\repos\Timer-Group-Project\Timer-Group-Project-GUI\Timer-Group-Project-GUI\bin\Debug\Method Source - Timer Group Project.pdb
+C:\Users\dhugh\source\repos\Timer-Group-Project\Timer-Group-Project-GUI\Timer-Group-Project-GUI\bin\Debug\Method Source - Timer Group Project.exe.config
+C:\Users\dhugh\source\repos\Timer-Group-Project\Timer-Group-Project-GUI\Timer-Group-Project-GUI\obj\Debug\Timer-Group-Project-GUI.csprojResolveAssemblyReference.cache
+C:\Users\dhugh\source\repos\Timer-Group-Project\Timer-Group-Project-GUI\Timer-Group-Project-GUI\obj\Debug\Timer_Group_Project_GUI.Add_Event.resources
+C:\Users\dhugh\source\repos\Timer-Group-Project\Timer-Group-Project-GUI\Timer-Group-Project-GUI\obj\Debug\Timer_Group_Project_GUI.Add_Medication.resources
+C:\Users\dhugh\source\repos\Timer-Group-Project\Timer-Group-Project-GUI\Timer-Group-Project-GUI\obj\Debug\Timer_Group_Project_GUI.Edit_Medication.resources
+C:\Users\dhugh\source\repos\Timer-Group-Project\Timer-Group-Project-GUI\Timer-Group-Project-GUI\obj\Debug\Timer_Group_Project_GUI.Main_Screen.resources
+C:\Users\dhugh\source\repos\Timer-Group-Project\Timer-Group-Project-GUI\Timer-Group-Project-GUI\obj\Debug\Timer_Group_Project_GUI.Properties.Resources.resources
+C:\Users\dhugh\source\repos\Timer-Group-Project\Timer-Group-Project-GUI\Timer-Group-Project-GUI\obj\Debug\Timer_Group_Project_GUI.Remove_Medication.resources
+C:\Users\dhugh\source\repos\Timer-Group-Project\Timer-Group-Project-GUI\Timer-Group-Project-GUI\obj\Debug\Timer-Group-Project-GUI.csproj.GenerateResource.Cache
+C:\Users\dhugh\source\repos\Timer-Group-Project\Timer-Group-Project-GUI\Timer-Group-Project-GUI\obj\Debug\Timer-Group-Project-GUI.csproj.CoreCompileInputs.cache
+C:\Users\dhugh\source\repos\Timer-Group-Project\Timer-Group-Project-GUI\Timer-Group-Project-GUI\obj\Debug\Timer-Group-Project-GUI.exe
+C:\Users\dhugh\source\repos\Timer-Group-Project\Timer-Group-Project-GUI\Timer-Group-Project-GUI\obj\Debug\Timer-Group-Project-GUI.pdb
