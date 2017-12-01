@@ -119,5 +119,10 @@ namespace Timer_Group_Project_GUI
 		{
 
 		}
-	}
+
+        private void doesOfMedLeble_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
