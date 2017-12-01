@@ -93,5 +93,10 @@ namespace Timer_Group_Project_GUI
 			treatTimeOutput.Clear();
 			searchMed.Enabled = true;
 		}
-	}
+
+        private void doesOfMedLeble_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
