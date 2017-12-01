@@ -44,12 +44,13 @@
             // addMedicationTitle
             // 
             this.addMedicationTitle.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.addMedicationTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addMedicationTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.addMedicationTitle.Font = new System.Drawing.Font("Modern No. 20", 40F);
             this.addMedicationTitle.ForeColor = System.Drawing.SystemColors.Window;
             this.addMedicationTitle.Location = new System.Drawing.Point(24, 23);
-            this.addMedicationTitle.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.addMedicationTitle.Margin = new System.Windows.Forms.Padding(6);
             this.addMedicationTitle.Name = "addMedicationTitle";
-            this.addMedicationTitle.Size = new System.Drawing.Size(1398, 116);
+            this.addMedicationTitle.Size = new System.Drawing.Size(1398, 115);
             this.addMedicationTitle.TabIndex = 5;
             this.addMedicationTitle.Text = "Add Medication";
             this.addMedicationTitle.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -57,8 +58,10 @@
             // 
             // currentTimers
             // 
+            this.currentTimers.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.currentTimers.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.currentTimers.Location = new System.Drawing.Point(912, 231);
-            this.currentTimers.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.currentTimers.Margin = new System.Windows.Forms.Padding(6);
             this.currentTimers.Name = "currentTimers";
             this.currentTimers.Size = new System.Drawing.Size(510, 552);
             this.currentTimers.TabIndex = 10;
@@ -68,12 +71,12 @@
             // 
             this.currentTimersTitle.BackColor = System.Drawing.Color.DarkSlateGray;
             this.currentTimersTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.currentTimersTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currentTimersTitle.Font = new System.Drawing.Font("Modern No. 20", 22F);
             this.currentTimersTitle.ForeColor = System.Drawing.SystemColors.Window;
-            this.currentTimersTitle.Location = new System.Drawing.Point(912, 152);
-            this.currentTimersTitle.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.currentTimersTitle.Location = new System.Drawing.Point(912, 150);
+            this.currentTimersTitle.Margin = new System.Windows.Forms.Padding(6);
             this.currentTimersTitle.Name = "currentTimersTitle";
-            this.currentTimersTitle.Size = new System.Drawing.Size(510, 55);
+            this.currentTimersTitle.Size = new System.Drawing.Size(510, 63);
             this.currentTimersTitle.TabIndex = 6;
             this.currentTimersTitle.Text = "Current Medications";
             this.currentTimersTitle.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -83,12 +86,12 @@
             this.medicationNameLeble.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.medicationNameLeble.BackColor = System.Drawing.Color.DarkSlateGray;
             this.medicationNameLeble.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.medicationNameLeble.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.medicationNameLeble.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.medicationNameLeble.ForeColor = System.Drawing.SystemColors.Window;
             this.medicationNameLeble.Location = new System.Drawing.Point(124, 231);
-            this.medicationNameLeble.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.medicationNameLeble.Margin = new System.Windows.Forms.Padding(6);
             this.medicationNameLeble.Name = "medicationNameLeble";
-            this.medicationNameLeble.Size = new System.Drawing.Size(314, 37);
+            this.medicationNameLeble.Size = new System.Drawing.Size(314, 35);
             this.medicationNameLeble.TabIndex = 7;
             this.medicationNameLeble.Text = "Medication Name";
             // 
@@ -97,26 +100,26 @@
             this.medicationDoesLeble.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.medicationDoesLeble.BackColor = System.Drawing.Color.DarkSlateGray;
             this.medicationDoesLeble.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.medicationDoesLeble.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.medicationDoesLeble.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.medicationDoesLeble.ForeColor = System.Drawing.SystemColors.Window;
             this.medicationDoesLeble.Location = new System.Drawing.Point(124, 315);
-            this.medicationDoesLeble.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.medicationDoesLeble.Margin = new System.Windows.Forms.Padding(6);
             this.medicationDoesLeble.Name = "medicationDoesLeble";
-            this.medicationDoesLeble.Size = new System.Drawing.Size(314, 37);
+            this.medicationDoesLeble.Size = new System.Drawing.Size(314, 35);
             this.medicationDoesLeble.TabIndex = 8;
-            this.medicationDoesLeble.Text = "Medication Does";
+            this.medicationDoesLeble.Text = "Medication Dose";
             // 
             // treatmentTimeLeble
             // 
             this.treatmentTimeLeble.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.treatmentTimeLeble.BackColor = System.Drawing.Color.DarkSlateGray;
             this.treatmentTimeLeble.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.treatmentTimeLeble.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.treatmentTimeLeble.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.treatmentTimeLeble.ForeColor = System.Drawing.SystemColors.Window;
             this.treatmentTimeLeble.Location = new System.Drawing.Point(124, 402);
-            this.treatmentTimeLeble.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.treatmentTimeLeble.Margin = new System.Windows.Forms.Padding(6);
             this.treatmentTimeLeble.Name = "treatmentTimeLeble";
-            this.treatmentTimeLeble.Size = new System.Drawing.Size(314, 37);
+            this.treatmentTimeLeble.Size = new System.Drawing.Size(314, 35);
             this.treatmentTimeLeble.TabIndex = 9;
             this.treatmentTimeLeble.Text = "Treatment Time(Min.) ";
             this.treatmentTimeLeble.TextChanged += new System.EventHandler(this.treatmentTimeLeble_TextChanged);
@@ -126,7 +129,7 @@
             this.treatTimeInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.treatTimeInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.treatTimeInput.Location = new System.Drawing.Point(482, 402);
-            this.treatTimeInput.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.treatTimeInput.Margin = new System.Windows.Forms.Padding(6);
             this.treatTimeInput.Name = "treatTimeInput";
             this.treatTimeInput.Size = new System.Drawing.Size(272, 44);
             this.treatTimeInput.TabIndex = 2;
@@ -136,7 +139,7 @@
             this.medDoesInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.medDoesInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.medDoesInput.Location = new System.Drawing.Point(482, 315);
-            this.medDoesInput.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.medDoesInput.Margin = new System.Windows.Forms.Padding(6);
             this.medDoesInput.Name = "medDoesInput";
             this.medDoesInput.Size = new System.Drawing.Size(272, 44);
             this.medDoesInput.TabIndex = 1;
@@ -146,7 +149,7 @@
             this.medNameInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.medNameInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.medNameInput.Location = new System.Drawing.Point(482, 231);
-            this.medNameInput.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.medNameInput.Margin = new System.Windows.Forms.Padding(6);
             this.medNameInput.Name = "medNameInput";
             this.medNameInput.Size = new System.Drawing.Size(272, 44);
             this.medNameInput.TabIndex = 0;
@@ -155,7 +158,7 @@
             // 
             this.Exit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.Exit.Location = new System.Drawing.Point(24, 742);
-            this.Exit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Exit.Margin = new System.Windows.Forms.Padding(6);
             this.Exit.Name = "Exit";
             this.Exit.Size = new System.Drawing.Size(150, 44);
             this.Exit.TabIndex = 4;
@@ -166,11 +169,12 @@
             // addMed
             // 
             this.addMed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.addMed.BackColor = System.Drawing.Color.LightSlateGray;
-            this.addMed.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addMed.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.addMed.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.addMed.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.addMed.Font = new System.Drawing.Font("Modern No. 20", 10F);
+            this.addMed.ForeColor = System.Drawing.SystemColors.Desktop;
             this.addMed.Location = new System.Drawing.Point(356, 500);
-            this.addMed.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.addMed.Margin = new System.Windows.Forms.Padding(6);
             this.addMed.Name = "addMed";
             this.addMed.Size = new System.Drawing.Size(254, 62);
             this.addMed.TabIndex = 3;
@@ -195,7 +199,7 @@
             this.Controls.Add(this.currentTimersTitle);
             this.Controls.Add(this.currentTimers);
             this.Controls.Add(this.addMedicationTitle);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Add_Medication";
             this.Text = "Add_Medication";
             this.ResumeLayout(false);
