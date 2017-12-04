@@ -59,7 +59,7 @@
             // currentTimers
             // 
             this.currentTimers.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.currentTimers.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.currentTimers.ForeColor = System.Drawing.SystemColors.InfoText;
             this.currentTimers.Location = new System.Drawing.Point(912, 231);
             this.currentTimers.Margin = new System.Windows.Forms.Padding(6);
             this.currentTimers.Name = "currentTimers";
@@ -88,10 +88,10 @@
             this.medicationNameLeble.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.medicationNameLeble.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.medicationNameLeble.ForeColor = System.Drawing.SystemColors.Window;
-            this.medicationNameLeble.Location = new System.Drawing.Point(124, 231);
+            this.medicationNameLeble.Location = new System.Drawing.Point(219, 236);
             this.medicationNameLeble.Margin = new System.Windows.Forms.Padding(6);
             this.medicationNameLeble.Name = "medicationNameLeble";
-            this.medicationNameLeble.Size = new System.Drawing.Size(314, 35);
+            this.medicationNameLeble.Size = new System.Drawing.Size(263, 35);
             this.medicationNameLeble.TabIndex = 7;
             this.medicationNameLeble.Text = "Medication Name";
             // 
@@ -102,12 +102,13 @@
             this.medicationDoesLeble.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.medicationDoesLeble.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.medicationDoesLeble.ForeColor = System.Drawing.SystemColors.Window;
-            this.medicationDoesLeble.Location = new System.Drawing.Point(124, 315);
+            this.medicationDoesLeble.Location = new System.Drawing.Point(231, 320);
             this.medicationDoesLeble.Margin = new System.Windows.Forms.Padding(6);
             this.medicationDoesLeble.Name = "medicationDoesLeble";
-            this.medicationDoesLeble.Size = new System.Drawing.Size(314, 35);
+            this.medicationDoesLeble.Size = new System.Drawing.Size(251, 35);
             this.medicationDoesLeble.TabIndex = 8;
             this.medicationDoesLeble.Text = "Medication Dose";
+            this.medicationDoesLeble.TextChanged += new System.EventHandler(this.medicationDoesLeble_TextChanged);
             // 
             // treatmentTimeLeble
             // 
@@ -116,7 +117,7 @@
             this.treatmentTimeLeble.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.treatmentTimeLeble.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.treatmentTimeLeble.ForeColor = System.Drawing.SystemColors.Window;
-            this.treatmentTimeLeble.Location = new System.Drawing.Point(124, 402);
+            this.treatmentTimeLeble.Location = new System.Drawing.Point(156, 407);
             this.treatmentTimeLeble.Margin = new System.Windows.Forms.Padding(6);
             this.treatmentTimeLeble.Name = "treatmentTimeLeble";
             this.treatmentTimeLeble.Size = new System.Drawing.Size(314, 35);
@@ -162,18 +163,18 @@
             this.Exit.Name = "Exit";
             this.Exit.Size = new System.Drawing.Size(150, 44);
             this.Exit.TabIndex = 4;
-            this.Exit.Text = "Exit";
+            this.Exit.Text = "Back";
             this.Exit.UseVisualStyleBackColor = true;
             this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
             // addMed
             // 
             this.addMed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.addMed.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.addMed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.addMed.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.addMed.Font = new System.Drawing.Font("Modern No. 20", 10F);
             this.addMed.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.addMed.Location = new System.Drawing.Point(356, 500);
+            this.addMed.Location = new System.Drawing.Point(351, 519);
             this.addMed.Margin = new System.Windows.Forms.Padding(6);
             this.addMed.Name = "addMed";
             this.addMed.Size = new System.Drawing.Size(254, 62);

@@ -23,5 +23,10 @@ namespace Timer_Group_Project_GUI
 			Main_Screen main = new Main_Screen();
 			main.ShowDialog();
 		}
-	}
+
+        private void eventNameInput_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

@@ -63,10 +63,7 @@ namespace Timer_Group_Project_GUI
 			main.ShowDialog();
 		}
 
-		private void currentTimers_TextChanged(object sender, EventArgs e)
-		{
-
-		}
+		
 
 		private void searchMed_Click(object sender, EventArgs e)
 		{
@@ -121,6 +118,11 @@ namespace Timer_Group_Project_GUI
 		}
 
         private void doesOfMedLeble_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nameOfMedLable2_TextChanged(object sender, EventArgs e)
         {
 
         }

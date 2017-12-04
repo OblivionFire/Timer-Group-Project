@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Method_Source_Timer_Group_Project;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,16 +9,46 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
 namespace Timer_Group_Project_GUI
 {
 	public partial class Main_Screen : Form
 	{
-		public Main_Screen()
-		{
-			InitializeComponent();
-		}
+        private medNodeControl meds = medNodeControl.Master();
+        private Timer t;
 
-		private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        public Main_Screen()
+		{
+
+			InitializeComponent();
+            string clock = DateTime.Now.ToString();
+           
+            currentTimers.Enabled = false;
+            currentTimersTitle.Enabled = false;
+            medNode[] currentMeds = meds.getMedArray();
+
+          
+
+            foreach (medNode x in currentMeds)
+            {
+                currentTimers.AppendText(x.toString(1) + "\r\n");
+            }
+        }
+        private void StartTimer()
+        {
+            t = new System.Windows.Forms.Timer();
+            t.Interval = 1000;
+            t.Tick += new EventHandler(t_Tick);
+            t.Enabled = true;
+        }
+
+        void t_Tick(object sender, EventArgs e)
+        {
+            label1.Text = DateTime.Now.ToString();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			//This is called when menu path File-> Exit is called
 			//It should close the program, I'm not 100% that it will actually work though
@@ -51,5 +82,35 @@ namespace Timer_Group_Project_GUI
 			Add_Event addEvent = new Add_Event();
 			addEvent.ShowDialog();
 		}
-	}
+
+        private void currentTimers_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Main_Screen_Load(object sender, EventArgs e)
+        {
+            StartTimer();
+        }
+
+        private void editMedicationToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void currentTimersTitle_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void currentTimers_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

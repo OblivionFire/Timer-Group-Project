@@ -53,7 +53,7 @@
             this.Exit.Name = "Exit";
             this.Exit.Size = new System.Drawing.Size(150, 44);
             this.Exit.TabIndex = 6;
-            this.Exit.Text = "Exit";
+            this.Exit.Text = "Back";
             this.Exit.UseVisualStyleBackColor = true;
             this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
@@ -77,14 +77,13 @@
             this.currentTimers.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.currentTimers.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.currentTimers.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.currentTimers.ForeColor = System.Drawing.SystemColors.MenuText;
             this.currentTimers.Location = new System.Drawing.Point(880, 206);
             this.currentTimers.Margin = new System.Windows.Forms.Padding(6);
             this.currentTimers.Name = "currentTimers";
             this.currentTimers.Size = new System.Drawing.Size(626, 613);
             this.currentTimers.TabIndex = 13;
             this.currentTimers.Text = "";
-            this.currentTimers.TextChanged += new System.EventHandler(this.currentTimers_TextChanged);
             // 
             // editMedicationTitle
             // 
@@ -108,7 +107,7 @@
             this.nameOfMedLable.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nameOfMedLable.Font = new System.Drawing.Font("Modern No. 20", 17F);
             this.nameOfMedLable.ForeColor = System.Drawing.SystemColors.Window;
-            this.nameOfMedLable.Location = new System.Drawing.Point(186, 183);
+            this.nameOfMedLable.Location = new System.Drawing.Point(176, 183);
             this.nameOfMedLable.Margin = new System.Windows.Forms.Padding(6);
             this.nameOfMedLable.Name = "nameOfMedLable";
             this.nameOfMedLable.Size = new System.Drawing.Size(510, 49);
@@ -119,7 +118,7 @@
             // nameOfMedInput
             // 
             this.nameOfMedInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameOfMedInput.Location = new System.Drawing.Point(267, 244);
+            this.nameOfMedInput.Location = new System.Drawing.Point(257, 244);
             this.nameOfMedInput.Margin = new System.Windows.Forms.Padding(6);
             this.nameOfMedInput.Name = "nameOfMedInput";
             this.nameOfMedInput.Size = new System.Drawing.Size(348, 41);
@@ -132,13 +131,14 @@
             this.nameOfMedLable2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nameOfMedLable2.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameOfMedLable2.ForeColor = System.Drawing.SystemColors.Window;
-            this.nameOfMedLable2.Location = new System.Drawing.Point(50, 457);
+            this.nameOfMedLable2.Location = new System.Drawing.Point(24, 457);
             this.nameOfMedLable2.Margin = new System.Windows.Forms.Padding(6);
             this.nameOfMedLable2.Name = "nameOfMedLable2";
-            this.nameOfMedLable2.Size = new System.Drawing.Size(222, 35);
+            this.nameOfMedLable2.Size = new System.Drawing.Size(261, 35);
             this.nameOfMedLable2.TabIndex = 10;
             this.nameOfMedLable2.Text = "Medication Name";
             this.nameOfMedLable2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.nameOfMedLable2.TextChanged += new System.EventHandler(this.nameOfMedLable2_TextChanged);
             // 
             // doesOfMedLeble
             // 
@@ -161,10 +161,10 @@
             this.treatTimeLeble.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.treatTimeLeble.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.treatTimeLeble.ForeColor = System.Drawing.SystemColors.Window;
-            this.treatTimeLeble.Location = new System.Drawing.Point(580, 457);
+            this.treatTimeLeble.Location = new System.Drawing.Point(564, 457);
             this.treatTimeLeble.Margin = new System.Windows.Forms.Padding(6);
             this.treatTimeLeble.Name = "treatTimeLeble";
-            this.treatTimeLeble.Size = new System.Drawing.Size(196, 35);
+            this.treatTimeLeble.Size = new System.Drawing.Size(272, 35);
             this.treatTimeLeble.TabIndex = 12;
             this.treatTimeLeble.Text = "Treatment Time";
             this.treatTimeLeble.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -172,7 +172,7 @@
             // medNameOutput
             // 
             this.medNameOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.medNameOutput.Location = new System.Drawing.Point(50, 518);
+            this.medNameOutput.Location = new System.Drawing.Point(43, 518);
             this.medNameOutput.Margin = new System.Windows.Forms.Padding(6);
             this.medNameOutput.Name = "medNameOutput";
             this.medNameOutput.Size = new System.Drawing.Size(222, 35);
@@ -192,7 +192,7 @@
             // treatTimeOutput
             // 
             this.treatTimeOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.treatTimeOutput.Location = new System.Drawing.Point(580, 518);
+            this.treatTimeOutput.Location = new System.Drawing.Point(602, 518);
             this.treatTimeOutput.Margin = new System.Windows.Forms.Padding(6);
             this.treatTimeOutput.Name = "treatTimeOutput";
             this.treatTimeOutput.Size = new System.Drawing.Size(196, 35);
@@ -201,7 +201,7 @@
             // 
             // saveChanges
             // 
-            this.saveChanges.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.saveChanges.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.saveChanges.Font = new System.Drawing.Font("Modern No. 20", 10F);
             this.saveChanges.Location = new System.Drawing.Point(321, 593);
             this.saveChanges.Margin = new System.Windows.Forms.Padding(6);
@@ -214,8 +214,8 @@
             // 
             // searchMed
             // 
-            this.searchMed.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.searchMed.Location = new System.Drawing.Point(366, 316);
+            this.searchMed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.searchMed.Location = new System.Drawing.Point(356, 316);
             this.searchMed.Margin = new System.Windows.Forms.Padding(6);
             this.searchMed.Name = "searchMed";
             this.searchMed.Size = new System.Drawing.Size(150, 44);
@@ -226,7 +226,7 @@
             // 
             // clear
             // 
-            this.clear.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.clear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.clear.Font = new System.Drawing.Font("Modern No. 20", 10F);
             this.clear.Location = new System.Drawing.Point(356, 669);
             this.clear.Margin = new System.Windows.Forms.Padding(6);

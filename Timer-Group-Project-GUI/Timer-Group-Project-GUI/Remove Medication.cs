@@ -98,5 +98,10 @@ namespace Timer_Group_Project_GUI
         {
 
         }
+
+        private void Remove_Medication_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

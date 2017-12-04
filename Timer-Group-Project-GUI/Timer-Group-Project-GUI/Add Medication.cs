@@ -75,5 +75,10 @@ namespace Timer_Group_Project_GUI
 		{
 
 		}
-	}
+
+        private void medicationDoesLeble_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
