@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Method_Source_Timer_Group_Project
 {
@@ -13,6 +14,7 @@ namespace Method_Source_Timer_Group_Project
 		private eventNode nextEvent;
 		private DateTime endTime;
 		private string name;
+		private medNode med;
 		#endregion
 		#region Getters/Setters
 		public eventNode getPrevEvent()
@@ -51,6 +53,15 @@ namespace Method_Source_Timer_Group_Project
 			name = nameX;
 		}
 
+		public medNode getLinkedMed()
+		{
+			return med;
+		}
+		public void setLinkMed(medNode linkedMedX)
+		{
+			med = linkedMedX;
+		}
+
 		#endregion
 		#region Constructors
 		public eventNode()
@@ -64,18 +75,34 @@ namespace Method_Source_Timer_Group_Project
 		{
 			name = nameX;
 			endTime = endTimeX;
+			this.start();
 		}
 		#endregion
 
 		public void start()
 		{
-			while(endTime > DateTime.Now)
+			while(DateTime.Now > endTime)
 			{
 
 			}
 
-			Console.WriteLine("Event " + name + "has completed");
+			MessageBox.Show("Event " + name + " has finished");
 		}
+		
+
+		public string toString()
+		{
+			if(med == null)
+			{
+				return ("Event Name: " + name + " Event Time: " + endTime.ToString());
+			}
+
+			else
+			{
+				return ("Event Name: " + name + " Event Time: " + endTime.ToString() + " Medication: " + med.toString(1));
+			}
+		}
+
 
 	}
 }

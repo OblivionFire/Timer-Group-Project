@@ -59,7 +59,7 @@ Expected Challenges: Not a bloody clue,
 The GUI might throw me for a little bit;
 Needs for Grace: just keep working, if you could also add the mock up and market resarch links to the ReadME file;
 
-12/1/17: 0003;
+1/12/17: 0003;
 Hours Spent working: 6;
 Accomplished: I have a working GUI for Adding, Editing, Removing paths,
 It will not be a challenge to add events to these Medications, nor do I think it will timers,
@@ -67,9 +67,25 @@ The one thing to yet work is the repetive call back asking for user confirmation
 Goals for next day: get events and timers to work, start Dev and call back;
 Needs from Grace: Mock-up link;
 
-21/1/17: 0610;
+1/12/17: 0610;
 Goals for the Day: To add the Event pages and make them work,
 This might be a chalenge, I'm not sure how a background thread button works,
 we will see, Linking a medication to an event should be very easy,
 again based on how a button that calls a background thread works making the call back feture will be easy or it will be hard;
 Needs from Grace: Mock-Up link;
+
+1/12/17
+Hours spent working: 2.5;
+Accompished: I started writing the code for the events system,
+I also fixed two bugs in the medication nodes, one with the search system,
+And one with the toString;
+Goals for Next Day: I need to get the events working at the call back work,
+Expected Challenges: Family are coming over both days this weekend, I'm not sure how long I will be able to work;
+Needs for Grace: I mentioned this is a text, it is quite hard to read the current medication queues.
+
+2-3/12/17
+Goals: Finish adding events and get call back working;
+Hours Spent Working: 4;
+Accomplished: All of the code for the events is writen and simply need to add them to the GUI;
+Blocks: I was short on time thats all;
+Needs from Grace: Non currently;

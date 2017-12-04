@@ -8,9 +8,25 @@ namespace Method_Source_Timer_Group_Project
 {
 	public class eventNodeControler
 	{
+		public static eventNodeControler master;
 		private eventNode firstEvent;
 		private eventNode ES;
 
+		public eventNodeControler()
+		{
+			firstEvent = null;
+			ES = null;
+		}
+
+		public static eventNodeControler Master()
+		{
+			if(master == null)
+			{
+				master = new eventNodeControler();
+			}
+
+			return master;
+		}
 
 		public void addEvent(String eventNameX, DateTime endTimeX)
 		{
@@ -25,7 +41,6 @@ namespace Method_Source_Timer_Group_Project
 			{
 				eventNode newEvent = new eventNode(eventNameX, endTimeX);
 				firstEvent = newEvent;
-				Console.ForegroundColor = ConsoleColor.DarkGray;
 				M.debug("New Event Created, assigned to firstEvent");
 			}
 
@@ -53,9 +68,38 @@ namespace Method_Source_Timer_Group_Project
 			}
 		}
 
-		public void startEvent()
+		public eventNode[] getEventArray()
 		{
-			firstEvent.start();
+			int eventCount = 1;
+			if(firstEvent == null)
+			{
+				eventNode[] temp = new eventNode[0];
+				return temp;
+			}
+
+			else
+			{
+				ES = firstEvent;
+
+				while(ES.getNextEvent() != null)
+				{
+					eventCount++;
+					ES = ES.getNextEvent();
+				}
+
+				eventNode[] events = new eventNode[eventCount];
+				ES = firstEvent;
+
+				for(int i = 0; i<eventCount; i++)
+				{
+					events[i] = ES;
+					ES = ES.getNextEvent();
+				}
+
+				return events;
+
+			}
 		}
+
 	}
 }
