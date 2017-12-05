@@ -415,7 +415,7 @@ namespace Method_Source_Timer_Group_Project
 				{
 					if (PS.getPathName().Equals(pathNameX))
 					{
-						PS.getEvents().startEvent();
+                        PS.getEvents();
 					}
 				}
 			}

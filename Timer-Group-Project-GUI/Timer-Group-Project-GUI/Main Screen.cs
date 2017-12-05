@@ -51,5 +51,12 @@ namespace Timer_Group_Project_GUI
 			Add_Event addEvent = new Add_Event();
 			addEvent.ShowDialog();
 		}
-	}
+
+        private void editMedicationToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Edit_Event editEvent = new Edit_Event();
+            editEvent.ShowDialog();
+        }
+    }
 }

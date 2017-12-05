@@ -73,10 +73,19 @@ namespace Method_Source_Timer_Group_Project
 
 		public eventNode(string nameX, DateTime endTimeX)
 		{
-			name = nameX;
-			endTime = endTimeX;
-			this.start();
-		}
+            name = nameX;
+            endTime = endTimeX;
+            this.start();
+        }
+
+        public eventNode(string nameX, DateTime endTimeX, medNode linkedMedX)
+        {
+            name = nameX;
+            endTime = endTimeX;
+            med = linkedMedX;
+            this.start();
+
+        }
 		#endregion
 
 		public void start()

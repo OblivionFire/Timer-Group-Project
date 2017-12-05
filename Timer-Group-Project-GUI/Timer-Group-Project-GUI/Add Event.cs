@@ -14,9 +14,11 @@ namespace Timer_Group_Project_GUI
 	public partial class Add_Event : Form
 	{
 		private eventNodeControler events = eventNodeControler.Master();
+        private medNodeControl meds = medNodeControl.Master();
 		public Add_Event()
 		{
 			InitializeComponent();
+            currentEvents.Clear();
 			eventNode[] eventList = events.getEventArray();
 
 			foreach (eventNode x in eventList)
@@ -24,7 +26,15 @@ namespace Timer_Group_Project_GUI
 				currentEvents.AppendText(x.ToString() +"/r/n");
 			}
 
-			currentEvents.Enabled = false;
+            currentTimers.Clear();
+            medNode[] currentMeds = meds.getMedArray();
+
+            foreach (medNode x in currentMeds)
+            {
+                currentTimers.AppendText(x.toString(1) + "\r\n");
+            }
+
+            currentEvents.Enabled = false;
 			currentEventsTitle.Enabled = false;
 			currentMedsTitle.Enabled = false;
 			currentTimers.Enabled = false;
@@ -40,10 +50,5 @@ namespace Timer_Group_Project_GUI
 			Main_Screen main = new Main_Screen();
 			main.ShowDialog();
 		}
-
-		private void addEvent_Click(object sender, EventArgs e)
-		{
-
-		}
-	}
+    }
 }

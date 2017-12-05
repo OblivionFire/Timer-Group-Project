@@ -51,8 +51,8 @@
             this.eventsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(12, 4, 0, 4);
-            this.menuStrip1.Size = new System.Drawing.Size(1784, 46);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 3, 0, 3);
+            this.menuStrip1.Size = new System.Drawing.Size(1338, 35);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -61,13 +61,13 @@
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(64, 38);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(50, 29);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(268, 38);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(123, 30);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -78,27 +78,27 @@
             this.editMedicationToolStripMenuItem,
             this.removeMedicationToolStripMenuItem});
             this.medicationToolStripMenuItem.Name = "medicationToolStripMenuItem";
-            this.medicationToolStripMenuItem.Size = new System.Drawing.Size(147, 38);
+            this.medicationToolStripMenuItem.Size = new System.Drawing.Size(112, 29);
             this.medicationToolStripMenuItem.Text = "Medication";
             // 
             // addMedicationToolStripMenuItem
             // 
             this.addMedicationToolStripMenuItem.Name = "addMedicationToolStripMenuItem";
-            this.addMedicationToolStripMenuItem.Size = new System.Drawing.Size(327, 38);
+            this.addMedicationToolStripMenuItem.Size = new System.Drawing.Size(253, 30);
             this.addMedicationToolStripMenuItem.Text = "Add Medication";
             this.addMedicationToolStripMenuItem.Click += new System.EventHandler(this.addMedicationToolStripMenuItem_Click);
             // 
             // editMedicationToolStripMenuItem
             // 
             this.editMedicationToolStripMenuItem.Name = "editMedicationToolStripMenuItem";
-            this.editMedicationToolStripMenuItem.Size = new System.Drawing.Size(327, 38);
+            this.editMedicationToolStripMenuItem.Size = new System.Drawing.Size(253, 30);
             this.editMedicationToolStripMenuItem.Text = "Edit Medication";
             this.editMedicationToolStripMenuItem.Click += new System.EventHandler(this.editMedicationToolStripMenuItem_Click);
             // 
             // removeMedicationToolStripMenuItem
             // 
             this.removeMedicationToolStripMenuItem.Name = "removeMedicationToolStripMenuItem";
-            this.removeMedicationToolStripMenuItem.Size = new System.Drawing.Size(327, 38);
+            this.removeMedicationToolStripMenuItem.Size = new System.Drawing.Size(253, 30);
             this.removeMedicationToolStripMenuItem.Text = "Remove Medication";
             this.removeMedicationToolStripMenuItem.Click += new System.EventHandler(this.removeMedicationToolStripMenuItem_Click);
             // 
@@ -109,37 +109,38 @@
             this.editMedicationToolStripMenuItem1,
             this.removeMedicationToolStripMenuItem1});
             this.eventsToolStripMenuItem.Name = "eventsToolStripMenuItem";
-            this.eventsToolStripMenuItem.Size = new System.Drawing.Size(96, 38);
+            this.eventsToolStripMenuItem.Size = new System.Drawing.Size(75, 29);
             this.eventsToolStripMenuItem.Text = "Events";
             // 
             // addMedicationToolStripMenuItem1
             // 
             this.addMedicationToolStripMenuItem1.Name = "addMedicationToolStripMenuItem1";
-            this.addMedicationToolStripMenuItem1.Size = new System.Drawing.Size(327, 38);
-            this.addMedicationToolStripMenuItem1.Text = "Add Medication";
+            this.addMedicationToolStripMenuItem1.Size = new System.Drawing.Size(253, 30);
+            this.addMedicationToolStripMenuItem1.Text = "Add Event";
             this.addMedicationToolStripMenuItem1.Click += new System.EventHandler(this.addMedicationToolStripMenuItem1_Click);
             // 
             // editMedicationToolStripMenuItem1
             // 
             this.editMedicationToolStripMenuItem1.Name = "editMedicationToolStripMenuItem1";
-            this.editMedicationToolStripMenuItem1.Size = new System.Drawing.Size(327, 38);
-            this.editMedicationToolStripMenuItem1.Text = "Edit Medication";
+            this.editMedicationToolStripMenuItem1.Size = new System.Drawing.Size(210, 30);
+            this.editMedicationToolStripMenuItem1.Text = "Edit Event";
+            this.editMedicationToolStripMenuItem1.Click += new System.EventHandler(this.editMedicationToolStripMenuItem1_Click);
             // 
             // removeMedicationToolStripMenuItem1
             // 
             this.removeMedicationToolStripMenuItem1.Name = "removeMedicationToolStripMenuItem1";
-            this.removeMedicationToolStripMenuItem1.Size = new System.Drawing.Size(327, 38);
-            this.removeMedicationToolStripMenuItem1.Text = "Remove Medication";
+            this.removeMedicationToolStripMenuItem1.Size = new System.Drawing.Size(210, 30);
+            this.removeMedicationToolStripMenuItem1.Text = "Remove Event";
             // 
             // Main_Screen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(1784, 1033);
+            this.ClientSize = new System.Drawing.Size(1338, 826);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Main_Screen";
             this.Text = "Main_Screen";
             this.menuStrip1.ResumeLayout(false);
