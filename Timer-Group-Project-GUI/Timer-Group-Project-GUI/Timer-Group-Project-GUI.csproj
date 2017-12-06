@@ -95,6 +95,9 @@
     <EmbeddedResource Include="Add Medication.resx">
       <DependentUpon>Add Medication.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Edit Event.resx">
+      <DependentUpon>Edit Event.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Edit Medication.resx">
       <DependentUpon>Edit Medication.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,6 +113,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Remove Event.resx">
+      <DependentUpon>Remove Event.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Remove Medication.resx">
       <DependentUpon>Remove Medication.cs</DependentUpon>
     </EmbeddedResource>

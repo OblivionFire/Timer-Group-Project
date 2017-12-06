@@ -16,5 +16,10 @@ namespace Timer_Group_Project_GUI
 		{
 			InitializeComponent();
 		}
-	}
+
+        private void searchMed_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

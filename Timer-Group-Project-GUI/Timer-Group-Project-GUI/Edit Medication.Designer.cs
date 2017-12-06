@@ -62,12 +62,12 @@
             this.currentTimersTitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.currentTimersTitle.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.currentTimersTitle.Font = new System.Drawing.Font("Modern No. 20", 20F);
+            this.currentTimersTitle.Font = new System.Drawing.Font("Century Gothic", 20F);
             this.currentTimersTitle.ForeColor = System.Drawing.SystemColors.Window;
-            this.currentTimersTitle.Location = new System.Drawing.Point(880, 127);
+            this.currentTimersTitle.Location = new System.Drawing.Point(880, 145);
             this.currentTimersTitle.Margin = new System.Windows.Forms.Padding(6);
             this.currentTimersTitle.Name = "currentTimersTitle";
-            this.currentTimersTitle.Size = new System.Drawing.Size(626, 65);
+            this.currentTimersTitle.Size = new System.Drawing.Size(626, 73);
             this.currentTimersTitle.TabIndex = 8;
             this.currentTimersTitle.Text = "Current Medication";
             this.currentTimersTitle.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -78,7 +78,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.currentTimers.BackColor = System.Drawing.Color.DarkSlateGray;
             this.currentTimers.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.currentTimers.Location = new System.Drawing.Point(880, 206);
+            this.currentTimers.Location = new System.Drawing.Point(880, 224);
             this.currentTimers.Margin = new System.Windows.Forms.Padding(6);
             this.currentTimers.Name = "currentTimers";
             this.currentTimers.Size = new System.Drawing.Size(626, 613);
@@ -92,12 +92,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.editMedicationTitle.BackColor = System.Drawing.Color.DarkSlateGray;
             this.editMedicationTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.editMedicationTitle.Font = new System.Drawing.Font("Modern No. 20", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.editMedicationTitle.Font = new System.Drawing.Font("Century Gothic", 40F);
             this.editMedicationTitle.ForeColor = System.Drawing.SystemColors.Window;
             this.editMedicationTitle.Location = new System.Drawing.Point(15, 15);
             this.editMedicationTitle.Margin = new System.Windows.Forms.Padding(6);
             this.editMedicationTitle.Name = "editMedicationTitle";
-            this.editMedicationTitle.Size = new System.Drawing.Size(1468, 103);
+            this.editMedicationTitle.Size = new System.Drawing.Size(1468, 131);
             this.editMedicationTitle.TabIndex = 7;
             this.editMedicationTitle.Text = "Edit Medication";
             this.editMedicationTitle.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -106,12 +106,12 @@
             // 
             this.nameOfMedLable.BackColor = System.Drawing.Color.DarkSlateGray;
             this.nameOfMedLable.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.nameOfMedLable.Font = new System.Drawing.Font("Modern No. 20", 17F);
+            this.nameOfMedLable.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.nameOfMedLable.ForeColor = System.Drawing.SystemColors.Window;
-            this.nameOfMedLable.Location = new System.Drawing.Point(186, 183);
+            this.nameOfMedLable.Location = new System.Drawing.Point(224, 192);
             this.nameOfMedLable.Margin = new System.Windows.Forms.Padding(6);
             this.nameOfMedLable.Name = "nameOfMedLable";
-            this.nameOfMedLable.Size = new System.Drawing.Size(510, 49);
+            this.nameOfMedLable.Size = new System.Drawing.Size(448, 40);
             this.nameOfMedLable.TabIndex = 9;
             this.nameOfMedLable.Text = "Name of Medication to Edit";
             this.nameOfMedLable.TextChanged += new System.EventHandler(this.nameOfMedLable_TextChanged);
@@ -130,12 +130,12 @@
             // 
             this.nameOfMedLable2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.nameOfMedLable2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.nameOfMedLable2.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameOfMedLable2.Font = new System.Drawing.Font("Century Gothic", 9F);
             this.nameOfMedLable2.ForeColor = System.Drawing.SystemColors.Window;
             this.nameOfMedLable2.Location = new System.Drawing.Point(50, 457);
             this.nameOfMedLable2.Margin = new System.Windows.Forms.Padding(6);
             this.nameOfMedLable2.Name = "nameOfMedLable2";
-            this.nameOfMedLable2.Size = new System.Drawing.Size(222, 35);
+            this.nameOfMedLable2.Size = new System.Drawing.Size(222, 30);
             this.nameOfMedLable2.TabIndex = 10;
             this.nameOfMedLable2.Text = "Medication Name";
             this.nameOfMedLable2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -144,12 +144,12 @@
             // 
             this.doesOfMedLeble.BackColor = System.Drawing.Color.DarkSlateGray;
             this.doesOfMedLeble.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.doesOfMedLeble.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.doesOfMedLeble.Font = new System.Drawing.Font("Century Gothic", 9F);
             this.doesOfMedLeble.ForeColor = System.Drawing.SystemColors.Window;
             this.doesOfMedLeble.Location = new System.Drawing.Point(323, 457);
             this.doesOfMedLeble.Margin = new System.Windows.Forms.Padding(6);
             this.doesOfMedLeble.Name = "doesOfMedLeble";
-            this.doesOfMedLeble.Size = new System.Drawing.Size(216, 35);
+            this.doesOfMedLeble.Size = new System.Drawing.Size(216, 30);
             this.doesOfMedLeble.TabIndex = 11;
             this.doesOfMedLeble.Text = "Medication Dose";
             this.doesOfMedLeble.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -159,12 +159,12 @@
             // 
             this.treatTimeLeble.BackColor = System.Drawing.Color.DarkSlateGray;
             this.treatTimeLeble.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.treatTimeLeble.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.treatTimeLeble.Font = new System.Drawing.Font("Century Gothic", 9F);
             this.treatTimeLeble.ForeColor = System.Drawing.SystemColors.Window;
             this.treatTimeLeble.Location = new System.Drawing.Point(580, 457);
             this.treatTimeLeble.Margin = new System.Windows.Forms.Padding(6);
             this.treatTimeLeble.Name = "treatTimeLeble";
-            this.treatTimeLeble.Size = new System.Drawing.Size(196, 35);
+            this.treatTimeLeble.Size = new System.Drawing.Size(196, 30);
             this.treatTimeLeble.TabIndex = 12;
             this.treatTimeLeble.Text = "Treatment Time";
             this.treatTimeLeble.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -202,7 +202,7 @@
             // saveChanges
             // 
             this.saveChanges.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.saveChanges.Font = new System.Drawing.Font("Modern No. 20", 10F);
+            this.saveChanges.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.saveChanges.Location = new System.Drawing.Point(321, 593);
             this.saveChanges.Margin = new System.Windows.Forms.Padding(6);
             this.saveChanges.Name = "saveChanges";
@@ -215,6 +215,7 @@
             // searchMed
             // 
             this.searchMed.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.searchMed.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.searchMed.Location = new System.Drawing.Point(366, 316);
             this.searchMed.Margin = new System.Windows.Forms.Padding(6);
             this.searchMed.Name = "searchMed";
@@ -227,7 +228,7 @@
             // clear
             // 
             this.clear.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.clear.Font = new System.Drawing.Font("Modern No. 20", 10F);
+            this.clear.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.clear.Location = new System.Drawing.Point(356, 669);
             this.clear.Margin = new System.Windows.Forms.Padding(6);
             this.clear.Name = "clear";
