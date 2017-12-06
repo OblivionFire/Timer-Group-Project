@@ -23,7 +23,7 @@ namespace Timer_Group_Project_GUI
 
 			foreach (eventNode x in eventList)
 			{
-				currentEvents.AppendText(x.ToString() +"/r/n");
+				currentEvents.AppendText(x.toString() +"\r\n");
 			}
 
             currentTimers.Clear();
@@ -50,5 +50,47 @@ namespace Timer_Group_Project_GUI
 			Main_Screen main = new Main_Screen();
 			main.ShowDialog();
 		}
-    }
+
+		private void addEvent_Click(object sender, EventArgs e)
+		{
+			DateTime temp = new DateTime();
+			if((string.IsNullOrWhiteSpace(eventNameInput.Text) == false) && (string.IsNullOrWhiteSpace(linkedMedInput.Text) == false) && (DateTime.TryParse(eventTimeInput.Text, out temp)))
+			{
+				medNode tempMed = meds.findMed(linkedMedInput.Text);
+				if (tempMed == null)
+				{
+					MessageBox.Show("That medication Does not Exist");
+				}
+
+				else if (DateTime.Compare(temp, DateTime.Now) < 0)
+				{
+					MessageBox.Show("That date has already past");
+				}
+
+				else
+				{
+					events.addEvent(eventNameInput.Text, temp, tempMed);
+					MessageBox.Show("Event Added");
+				}
+			}
+
+			else if((string.IsNullOrWhiteSpace(eventNameInput.Text) == false) && (DateTime.TryParse(eventTimeInput.Text, out temp)))
+			{
+				if (DateTime.Compare(temp, DateTime.Now) < 0)
+				{
+					MessageBox.Show("That date has already past");
+				}
+				else
+				{
+					events.addEvent(eventNameInput.Text, temp);
+					MessageBox.Show("Event Added");
+				}
+			}
+		}
+
+		private void Add_Event_Load(object sender, EventArgs e)
+		{
+
+		}
+	}
 }

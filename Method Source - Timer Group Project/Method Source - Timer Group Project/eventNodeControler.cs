@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
+using System.Windows.Forms;
 
 namespace Method_Source_Timer_Group_Project
 {
@@ -138,6 +140,108 @@ namespace Method_Source_Timer_Group_Project
 
 				return events;
 
+			}
+		}
+
+		public void manageEvents()
+		{
+			while(true)
+			{
+				if(firstEvent == null)
+				{
+					Thread.Sleep(10000);
+				}
+
+				else
+				{ 
+					ES = firstEvent;
+
+					while(ES != null)
+					{
+						int finished = DateTime.Compare(ES.getEndTime(), DateTime.Now);
+						if(finished > 0)
+						{
+							if (ES.getLinkedMed() == null)
+							{
+								MessageBox.Show("Event: " + ES.getName() + " Has finished");
+								removeEvent(ES);
+							}
+
+							else
+							{
+								MessageBox.Show("Event: " + ES.getName() + " Has finished. Linked Medication: " + ES.getLinkedMed().toString(false));
+								removeEvent(ES);
+							}
+						}
+
+						ES = ES.getNextEvent();
+					}
+				}
+
+
+			}
+		}
+
+
+		public void removeEvent(eventNode remove)
+		{
+
+			/*
+			 * The getters for pathNodes are not build to not return null, meaning if you try and call a method like
+			 * remove.getNext().setNext(null) but remove.getNext() is null it will hard error
+			 */
+			if (remove == firstEvent) //If the path to remove is the first path, you simple need to re-assign first path.
+			{
+				if (remove.getNextEvent() == null) //Program will error out w/o these error checks
+				{
+					firstEvent = null;
+				}
+
+				else
+				{
+					firstEvent = remove.getNextEvent();
+					firstEvent.setPrevEvent(null);
+				}
+			}
+
+			else if (remove == firstEvent.getNextEvent())
+			/*
+             * This is a simi-redundent case
+             * This could be handled with the else statment
+             * however I like handling this case seperatly I don't know why
+             * Anyt thing I mess with anything to do with firstEvent, I like to call it Directly
+             */
+			{
+				if (remove.getNextEvent() == null)
+				{
+					firstEvent.setNextEvent(null);
+					remove.setPrevEvent(null); //This is a redudent clean up that I like to do, it is not necissary
+				}
+
+				else
+				{
+					firstEvent.setNextEvent(remove.getNextEvent());
+					remove.getNextEvent().setPrevEvent(firstEvent);
+					remove.setNextEvent(null);
+					remove.setPrevEvent(null);
+				}
+			}
+
+			else
+			{
+				if (remove.getNextEvent() == null)
+				{
+					remove.getPrevEvent().setNextEvent(null);
+					remove.setNextEvent(null);
+				}
+
+				else
+				{
+					remove.getPrevEvent().setNextEvent(remove.getNextEvent());
+					remove.getNextEvent().setPrevEvent(remove.getPrevEvent());
+					remove.setNextEvent(null);
+					remove.setPrevEvent(null);
+				}
 			}
 		}
 

@@ -89,3 +89,31 @@ Hours Spent Working: 4;
 Accomplished: All of the code for the events is writen and simply need to add them to the GUI;
 Blocks: I was short on time thats all;
 Needs from Grace: Non currently;
+
+4/12/17: 0610;
+Goals: I want to get the events working;
+Expected challenges: null;
+Needs form Grace: null;
+
+4/12/17: 19:30;
+Hours spent working 3;
+Accomplished: On the surface nothing, but I figure a lot out,
+The background work does not funtion the way I though,
+This requires a thoughs shift;
+Goals for Tomorrow: Get Events Working;
+Needs Form Grace: Null;
+
+5/12/17: 0610;
+Goals: Get Events Working;
+Expected Blocks: None;
+Needs from Grace: Once I get the Add Events working, if you could do the Edit and Remove events that would be great;
+
+5/12/17: 18:30;
+Time Spent Working: 3 hours;
+Accomplished: Events can be add, 
+bad data is ignored,
+events send pop up to screen;
+Goals for tomorrow: Get edit and remove events working,
+mesh main screen,
+make event pages look nice,
+add repetative call back to events;

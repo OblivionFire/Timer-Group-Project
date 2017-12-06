@@ -75,16 +75,13 @@ namespace Method_Source_Timer_Group_Project
 		{
             name = nameX;
             endTime = endTimeX;
-            this.start();
         }
 
         public eventNode(string nameX, DateTime endTimeX, medNode linkedMedX)
         {
             name = nameX;
             endTime = endTimeX;
-            med = linkedMedX;
-            this.start();
-
+			med = linkedMedX;
         }
 		#endregion
 
@@ -109,6 +106,19 @@ namespace Method_Source_Timer_Group_Project
 			else
 			{
 				return ("Event Name: " + name + " Event Time: " + endTime.ToString() + " Medication: " + med.toString(1));
+			}
+		}
+
+		public void remove()
+		{
+			if (prevEvent != null)
+			{
+				prevEvent.setNextEvent(nextEvent);
+			}
+
+			if (nextEvent != null)
+			{
+				nextEvent.setPrevEvent(prevEvent);
 			}
 		}
 

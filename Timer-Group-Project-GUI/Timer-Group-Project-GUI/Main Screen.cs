@@ -6,15 +6,18 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
+using Method_Source_Timer_Group_Project;
 
 namespace Timer_Group_Project_GUI
 {
 	public partial class Main_Screen : Form
 	{
+		private eventNodeControler events = eventNodeControler.Master();
 		public Main_Screen()
 		{
-			InitializeComponent();
+			InitializeComponent();backgroundWorker1.RunWorkerAsync();
 		}
 
 		private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -58,5 +61,10 @@ namespace Timer_Group_Project_GUI
             Edit_Event editEvent = new Edit_Event();
             editEvent.ShowDialog();
         }
-    }
+
+		private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+		{
+			events.manageEvents();
+		}
+	}
 }
