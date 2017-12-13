@@ -149,7 +149,7 @@ namespace Method_Source_Timer_Group_Project
 			{
 				if(firstEvent == null)
 				{
-					Thread.Sleep(10000);
+					Thread.Sleep(1000);
 				}
 
 				else
@@ -159,17 +159,19 @@ namespace Method_Source_Timer_Group_Project
 					while(ES != null)
 					{
 						int finished = DateTime.Compare(ES.getEndTime(), DateTime.Now);
-						if(finished > 0)
+						if(finished > 0 && ES.getReminder() == false)
 						{
 							if (ES.getLinkedMed() == null)
 							{
 								MessageBox.Show("Event: " + ES.getName() + " Has finished");
+                                ES.setReminder(true);
 								removeEvent(ES);
 							}
 
 							else
 							{
 								MessageBox.Show("Event: " + ES.getName() + " Has finished. Linked Medication: " + ES.getLinkedMed().toString(false));
+                                ES.setReminder(true);
 								removeEvent(ES);
 							}
 						}

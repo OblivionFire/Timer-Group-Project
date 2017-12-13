@@ -74,7 +74,9 @@ namespace Timer_Group_Project_GUI
 
         private void Exit_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Main_Screen main = new Main_Screen();
+            main.ShowDialog();
         }
 
         private void currentMedsTitle_TextChanged(object sender, EventArgs e)

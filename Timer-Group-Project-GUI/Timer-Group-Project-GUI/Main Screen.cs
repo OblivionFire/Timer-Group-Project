@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Method_Source_Timer_Group_Project;
 
 
 
@@ -34,6 +35,8 @@ namespace Timer_Group_Project_GUI
             {
                 currentTimers.AppendText(x.toString(1) + "\r\n");
             }
+
+            backgroundWorker1.RunWorkerAsync();
         }
         private void StartTimer()
         {
@@ -95,7 +98,9 @@ namespace Timer_Group_Project_GUI
 
         private void editMedicationToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Edit_Event editEvent = new Edit_Event();
+            editEvent.ShowDialog();
         }
 
         private void currentTimersTitle_TextChanged(object sender, EventArgs e)
@@ -110,6 +115,21 @@ namespace Timer_Group_Project_GUI
 
         private void label2_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void removeMedicationToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Remove_Event removeEvent = new Remove_Event();
+            removeEvent.ShowDialog();
+        }
+
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
+            eventNodeControler events = eventNodeControler.Master();
+            events.manageEvents();
+
 
         }
     }

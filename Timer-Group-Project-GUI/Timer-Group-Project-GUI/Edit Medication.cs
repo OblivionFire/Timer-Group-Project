@@ -53,7 +53,16 @@ namespace Timer_Group_Project_GUI
 				treatTimeOutput.Clear();
 				nameOfMedInput.Enabled = true;
 				searchMed.Enabled = true;
-			}
+
+                currentTimers.Clear();
+
+                medNode[] currentMeds = meds.getMedArray();
+
+                foreach (medNode x in currentMeds)
+                {
+                    currentTimers.AppendText(x.toString(1) + "\r\n");
+                }
+            }
 		}
 
 		private void Exit_Click(object sender, EventArgs e)

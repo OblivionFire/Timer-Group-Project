@@ -15,6 +15,7 @@ namespace Method_Source_Timer_Group_Project
 		private DateTime endTime;
 		private string name;
 		private medNode med;
+        private bool reminder;
 		#endregion
 		#region Getters/Setters
 		public eventNode getPrevEvent()
@@ -62,6 +63,15 @@ namespace Method_Source_Timer_Group_Project
 			med = linkedMedX;
 		}
 
+        public void setReminder(bool remind)
+        {
+            reminder = remind;
+        }
+        public bool getReminder()
+        {
+            return reminder;
+        }
+
 		#endregion
 		#region Constructors
 		public eventNode()
@@ -69,12 +79,14 @@ namespace Method_Source_Timer_Group_Project
 			prevEvent = null;
 			nextEvent = null;
 			name = null;
+            reminder = false;
 		}
 
 		public eventNode(string nameX, DateTime endTimeX)
 		{
             name = nameX;
             endTime = endTimeX;
+            reminder = false;
         }
 
         public eventNode(string nameX, DateTime endTimeX, medNode linkedMedX)
@@ -82,6 +94,7 @@ namespace Method_Source_Timer_Group_Project
             name = nameX;
             endTime = endTimeX;
 			med = linkedMedX;
+            reminder = false;
         }
 		#endregion
 

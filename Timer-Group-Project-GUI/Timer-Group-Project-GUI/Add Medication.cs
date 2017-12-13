@@ -59,7 +59,16 @@ namespace Timer_Group_Project_GUI
 				TimeSpan temp = new TimeSpan(0, treatTimeMin, 0);
 				meds.addMed(medNameInput.Text, medDoesInput.Text, temp);
 				MessageBox.Show("Medication Added");
-			}
+
+                currentTimers.Clear();
+
+                medNode[] currentMeds = meds.getMedArray();
+
+                foreach (medNode x in currentMeds)
+                {
+                    currentTimers.AppendText(x.toString(1) + "\r\n");
+                }
+            }
 
 			else
 			{

@@ -45,3 +45,9 @@ C:\Users\dhugh\source\repos\timer new folder\Method Source - Timer Group Project
 C:\Users\dhugh\source\repos\timer new folder\Method Source - Timer Group Project\Method Source - Timer Group Project\obj\Debug\Method Source - Timer Group Project.csproj.CoreCompileInputs.cache
 C:\Users\dhugh\source\repos\timer new folder\Method Source - Timer Group Project\Method Source - Timer Group Project\obj\Debug\Method Source - Timer Group Project.exe
 C:\Users\dhugh\source\repos\timer new folder\Method Source - Timer Group Project\Method Source - Timer Group Project\obj\Debug\Method Source - Timer Group Project.pdb
+C:\Programing\Repos\Turn In Copy of Project\Method Source - Timer Group Project\Method Source - Timer Group Project\bin\Debug\Method Source - Timer Group Project.exe.config
+C:\Programing\Repos\Turn In Copy of Project\Method Source - Timer Group Project\Method Source - Timer Group Project\bin\Debug\Method Source - Timer Group Project.exe
+C:\Programing\Repos\Turn In Copy of Project\Method Source - Timer Group Project\Method Source - Timer Group Project\bin\Debug\Method Source - Timer Group Project.pdb
+C:\Programing\Repos\Turn In Copy of Project\Method Source - Timer Group Project\Method Source - Timer Group Project\obj\Debug\Method Source - Timer Group Project.csprojResolveAssemblyReference.cache
+C:\Programing\Repos\Turn In Copy of Project\Method Source - Timer Group Project\Method Source - Timer Group Project\obj\Debug\Method Source - Timer Group Project.exe
+C:\Programing\Repos\Turn In Copy of Project\Method Source - Timer Group Project\Method Source - Timer Group Project\obj\Debug\Method Source - Timer Group Project.pdb
